@@ -22,7 +22,7 @@ def trial_error(problem: Problem):
         if len(successor) == 0:
             return "[-] Unsolvable!"
         state = successor[np.random.randint(0, len(successor))]
-        print(state)
+        #print(state)
 
 def hill_climbin_for_cup3(problem: Problem,heuristic):
 
@@ -46,12 +46,12 @@ def hill_climbin_for_cup3(problem: Problem,heuristic):
         if len(test_successor) == 0:
             return " [-] Unsolvable"
         state = test_successor[np.random.randint(0, len(test_successor))]
-        print(state)
+        #print(state)
 
 def heuristic(State):
     if State == (4,0,1) or State == (4,1,0):
-        return 0;
-    c = 0;
+        return 0
+    c = 0
     for s in State:
         if s == 0:
             c+=1
