@@ -62,7 +62,7 @@ def breath_first_search(problem: Problem):
     frontier = deque([Node(problem.initial)])
 
     while frontier:
-        node = frontier.popleft();
+        node = frontier.popleft()
 
         if problem.goal_test(node.state):
             #megvan a cél!

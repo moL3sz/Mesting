@@ -4,7 +4,11 @@ from problem import Problem
 class NQueens(Problem):
 
     def __init__(self, N):
+        
+        # hány oszlopos a sakk táblánk
+        # egyes értékek a listában azt jelenti hogy az adott oszlopban a királnyő melyik sorban van
         super().__init__(tuple([-1]*N))
+
         self.N = N
 
     def actions(self, state):
